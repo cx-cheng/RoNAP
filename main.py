@@ -300,10 +300,6 @@ model.eval()
 
 while run:
 
-    if screen == 'welcome':
-
-        run = WelcomeScreen(win,Startbtn,Genbtn,Confbtn,Savebtn,Introbtn,Collectbtn,WelcomeText)
-
     if screen == 'intro':
 
         run = IntroScreen(win,Welcomebtn,DeveloperTextOne,DeveloperTextTwo,photo_scale)
@@ -350,11 +346,6 @@ while run:
             LargeScreen = True
 
         run, screen, AlreadySave = MapScreen(x,y,des_x,des_y,window_size,chop_size,win,background,DataLog,AlreadySave)
-
-
-    # 更新画布
-    pygame.display.update()
-    clock.tick(60)
 
 
 pygame.quit()
